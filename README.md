@@ -11,7 +11,7 @@ Each of the files in the repository are described below:
 + **training_tracking.py** : Main script for model training and running the MLflow experiment
 + **data_model_class.py** : Contains class for data preprocessing and model network
 + **deployment.py** : FastAPI model deployment script
-+ **requirements.txt** : Conda environment and package dependencies
++ **requirements.yml** : Conda environment and package dependencies
 + **sample_test.csv** : Sample file that can be uploaded to generate predictions
 + **tokenizer.pickle** : Saved Keras tokenizer object
 + **mlruns/** : Contains MLflow runs 
@@ -22,9 +22,9 @@ To use the trained model for generating predictions, follow the steps listed bel
 ```
 git clone https://github.com/deba301996/Movie-Reviews-SentimentAnalyser.git
 ```
-2. Create a new conda virtual environment using the **requirements.txt** file using the command
+2. Create a new conda virtual environment using the **requirements.yml** file using the command
 ```
-conda create --name new_environment_name --file requirements.txt
+conda env create --name new_environment_name --file=requirements.yml
 ```
 3. Activate the conda environment
 ```
@@ -40,8 +40,7 @@ export MLFLOW_TRACKING_URI=http://127.0.0.1:5000
 ```
 6. Next, start the model serving server on a different port 1234 using the command. It will start the server on **http://127.0.0.1:1234**
 ```
-mlflow models serve --model-uri models:/sentiment_analyzer_model
-/Production -p 1234 --no-conda
+mlflow models serve --model-uri models:/sentiment_analyzer_model/Production -p 1234 --no-conda
 ```
 7. Lastly, run the **deployment.py** script using the command, which opens on **http://127.0.0.1:8000**
 ```
