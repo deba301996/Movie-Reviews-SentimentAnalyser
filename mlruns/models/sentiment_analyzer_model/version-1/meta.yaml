@@ -1,0 +1,13 @@
+aliases: []
+creation_timestamp: 1696899687672
+current_stage: Production
+description: null
+last_updated_timestamp: 1696899687679
+name: sentiment_analyzer_model
+run_id: dc459eef3af14934adecc882fa74f545
+run_link: null
+source: file:///Users/debayanroy/Downloads/mlflow_check/mlruns/824244805677871742/dc459eef3af14934adecc882fa74f545/artifacts/tf_model
+status: READY
+status_message: null
+user_id: null
+version: 1

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/debayanroy/Downloads/mlflow_check/mlruns/824244805677871742/695984d9e76c47acaf8d3c3d3b3e503c/artifacts
+end_time: 1696888297621
+entry_point_name: ''
+experiment_id: '824244805677871742'
+lifecycle_stage: active
+run_id: 695984d9e76c47acaf8d3c3d3b3e503c
+run_name: '17'
+run_uuid: 695984d9e76c47acaf8d3c3d3b3e503c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1696887673544
+status: 3
+tags: []
+user_id: debayanroy
